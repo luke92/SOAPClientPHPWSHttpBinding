@@ -16,3 +16,8 @@ Lo que se necesita para que funcione la llamada al metodo SOAP es tener las sigu
         </binding>
       </wsHttpBinding>` 
 
+# SOAPUI
+Para probar el servicio con SOAPUI seguir los siguientes pasos: <br />
+1. Crear proyecto de SOAPUI: Colocar en Initial WSDL la ruta del servicio agregando "?wsdl" (service.svc?wsdl)
+2. Boton Derecho sobre el servicio -> Show Interface Viewer -> Solapa Service Endpoints -> Colocar username password y wss-type (PasswordText)
+3. Abrir un request de uno de los metodos -> Solapa WS-A -> Tildar Enable WS-A addressing, Add default wsa:Action y Add default wsa:To
